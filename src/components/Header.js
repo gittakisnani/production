@@ -9,7 +9,7 @@ const Header = () => {
     const cars = useSelector(selectCars)
   return (
     <header>
-        <Logo src="/images/logo.svg"/>
+        <Logo src="./production/images/logo.svg" />
         <Nav>
            <a href="#">Model S</a>
            <a href="#">Model 3</a>
@@ -20,8 +20,8 @@ const Header = () => {
         <RightNav>
            <a href='#'>Shop</a>
            <a href='#'>Accounts</a>
-           <a href='#' className='burger-menu' onClick={_ => setShowNav(true)}>Menu</a>
-           <a href='#' className="burger-icon" onClick={_ => setShowNav(true)}><FaBars /></a>
+           <a href='#' className='burger-menu' onClick={_=> setShowNav(true)}>Menu</a>
+           <a href='#' className="burger-icon" onClick={_=> setShowNav(true)}><FaBars /></a>
         </RightNav>
         <Aside showNav={showNav} className="aside">
             <CloseButton onClick={_ => setShowNav(false)}>

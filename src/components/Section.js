@@ -36,7 +36,7 @@ const Wrap = styled.div`
     width: 100vw;
     height: 100vh;
     background-size: cover;
-    background-image: ${props => `url("/images/${props.image}")`};
+    background-image: ${props => `url("./production/images/${props.image}")`};
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
